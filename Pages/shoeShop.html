@@ -1,0 +1,107 @@
+<html>
+
+<head>
+    <meta name=“viewport” content=“width-device-width, initial-scale-1.0”>
+    <title> eMall </title>
+    <link rel="styleSheet" type="text/css"  href="../CSS/main.css" />
+</head>
+
+<body>
+
+    <div class="marquee">
+        <h1>WalkEast</h1>
+    </div>
+
+    <div class="marqueeImg"> </div>
+
+    <!------------------- Item 1  ---------------->
+
+    <div class="container">
+        <div class="itemBox">
+            <div class="itemImg" style="background-image: url('../Images/Shoes/bedazzeledPump.jpg');"> </div>
+
+            <div class="itemDesc">
+                <h1>Milan</h1>
+                <p>From the 'Empress' Collection by Frederica Colangelo.
+                    This smart sleek design is ready for casual evening out or serious business attire.
+                    It features an aged Morrocan leather top with Persian silk interior. Ultra thin, ultra flexible
+                    titanium
+                    core
+                    with sole made from high Andees alpaca leather. This light weight package combined
+                    with Dynex open foam insert gives maximum comfort while providing extended durability.
+                </p>
+
+                <h3>Price: $67.50</h3>
+
+                <div style="margin: 18px auto" ;>
+                    <input class="btn" type="button" value="add to cart" name="Addtocahrt" action="purchase()">
+                </div>
+
+            </div>
+        </div>
+
+        <!----------------  Item 2  ---------------------------->
+        <div class="itemBox">
+            <div class="itemImg" style="background-image: url('../Images/Shoes/white tiptoe pumps.jpg');"> </div>
+
+            <div class="itemDesc">
+                <h1 id="elise">Elise</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, assumenda odio. Est a eveniet
+                    autem itaque dolor tempora laboriosam totam tenetur? Molestias saepe impedit dolorem? Perferendis
+                    non fugit
+                    labore ut?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum adipisci, ex accusantium
+                    quia delectus
+                    recusandae omnis nulla doloremque dolore ratione. Aspernatur animi amet fugiat doloremque minima,
+                    facere doloribus accusantium quis.
+                </p>
+
+                <h3>Price: $67.50</h3>
+
+                <div style="margin: 18px auto" ;>
+                    <input class="btn" type="button" value="add to cart" name="Addtochart" onClick="purchase().js">
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <!--  ----------------Item 3-------------------------    -->
+        <div class="itemBox">
+            <div class="itemImg" style="background-image: url('../Images/Shoes/blue flat pump.jpg');"> </div>
+
+            <div class="itemDesc">
+
+                <h1>Balize</h1>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, assumenda odio. Est a
+                    eveniet
+                    autem itaque dolor tempora laboriosam totam tenetur? Molestias saepe impedit dolorem?
+                    Perferendis non fugit
+                    labore ut?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum adipisci, ex
+                    accusantium quia delectus
+                    recusandae omnis nulla doloremque dolore ratione. Aspernatur animi amet fugiat doloremque
+                    minima, facere doloribus accusantium quis.
+                </p>
+
+                <h3>Price: $67.50</h3>
+
+                <div style="margin: 18px auto" ;>
+                    <input class="btn" type="button" value="add to cart" name="Addtochart" onClick="purchase()">
+                </div>
+            </div>
+
+        </div> <!-- container-->
+    </div>
+
+    <script type="text/javascript">
+        function purchase() {
+            alert("intem purchased");
+            /* document.getElementById("sharazz").innerHTML = "Elise"; */
+            document.getElementById("elise").innerText = "Toeledo";
+        } 
+    </script>
+
+</body>
+
+</html>

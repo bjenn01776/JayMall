@@ -1,0 +1,125 @@
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clr {
+    clear: both;
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    background-color: lightgrey;
+    background-image: url('../Images/BackGround/th-124654882.jpg');
+   
+}
+
+.container {
+    display: block;
+    width: 85%;
+    margin: auto;
+    min-width: 400px;
+}
+
+
+.marquee {
+    height: 12vh;
+    background-color: rgb(134, 49, 140);
+    margin: 0 auto;
+}
+
+.marquee h1 {
+    margin: 22px 0 0 48px;
+    padding-top: 14px;
+    color: white;
+}
+
+.marqueeImg {
+    /* background-image: url('./Images/j3b43ntbiwn.jpg'); */
+     
+    background-image: url(../Images/Shoes/formal2Shoe.jpg);
+    background-size: contain;
+    height: 8vh;
+    margin: 0 auto 6vh auto;
+  border: 3px rgb(134, 49, 140) solid; 
+}
+
+
+
+.itemBox {
+    display: block;
+}
+
+.itemImg {
+    background-image: url('../Images/j3b43ntbiwn.jpg');
+    background-size: cover;
+    background-position: center center;
+    outline: 2px black solid;
+    width: 100%; 
+    margin: 0 auto 18px;
+    height: 38vh;
+}
+
+.itemDesc {
+    /*: 90%; */
+    background-color: rgb(180, 180, 180);
+    margin: 0 auto 16vh;
+    padding: 1.6em 3em 1.6ex 3em;
+    outline: 2px black solid;
+}
+
+.itemDesc h1 {
+    grid-column: span 3;
+    text-align: center;
+    height: 7vh;
+    margin: auto;
+}
+
+.itemDesc h3 {
+    grid-column: span 3;
+    text-align: left;
+    height: 5vh;
+    margin-top: 1.5em;
+}
+
+
+
+.btn {
+    border: black 3px solid;
+    width: 6em;
+    height: 1.8em;
+    margin: auto;
+    padding: .2em 0;
+    text-align: center;
+    border-radius: 8px;
+}
+
+@media screen and (min-width: 660px) {
+
+    .itemBox {
+        display: grid;
+        column-gap: 0;
+        grid-template-columns: 3fr 1fr;
+        align-content: stretch;
+        margin-bottom: 4rem;
+    }
+
+    .itemImg {
+        height: auto;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .itemDesc {
+        padding: 2em 2em;
+        min-width: 340px;
+        max-width: 780px;
+        margin: 0;
+    }
+
+}
+ 
